@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors</title>
+</head>
+<body>
+    <style>
+        /*element selectors*/
+        div{
+           /* background-color: red;*/
+        }
+        /* class selectors */
+        .red{
+            background-color: brown;
+        }
+        #green{
+            background-color: aqua;
+        }
+        /* child selectors */
+        div>p{
+            color: black;
+            background-color:yellow;
+        }
+        /* descendant selectors */
+        div > p{
+            color: blue;
+            background-color: brown;
+        }
+        /* universal selectors */
+        *{
+            margin:0;
+            padding:0;
+        }
+        /* pseudo selectors */
+        a:visited{
+            color: chocolate;
+        }
+        a:active{
+            background-color: chocolate;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+        p:first-child{
+            background-color: green;
+        }
+    </style>
+    
+    
+    <div class="red">i am a div
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sint similique deserunt.</p>
+
+    </div><main class="one">
+        <p> iam one</p>
+        <p> i am two</p>
+    </main>
+    <article>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit illum cum quo architecto incidunt dignissimos, sequi accusantium placeat quas fuga deserunt nemo. Blanditiis omnis soluta pariatur vitae, voluptas illum nemo?
+        </p>
+    </article> 
+    <div id="green"> i am another div</div>
+    <a href="httos://www.google.com">Go to gooogle</a>
+</body>
+</html>
