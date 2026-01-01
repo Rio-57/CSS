@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SPECIFICITY</title>
+    <style>
+    h1{
+        color: greenyellow;
+    }
+    .yellow{
+        color: yellow;
+    }
+    .cred{
+        color: red;
+    }
+    .cpurple{
+        color: purple;
+    }
+    [data-x="a"]{
+        background-color: red;/* attribute selectors */
+    } 
+    
+    
+
+</style>
+</head>
+<body>
+   <div>
+</div>
+<h1 style="color: blue;" class="yellow cred cpurple" data-x="a">CSS SPECIFICITY</h1>
+<h2 style="color: violet;">Hi</h2>
+<!-- inline style> ID selectors> class or attribute> element selectors> universal selectors -->
+    
+</body>
+</html>
