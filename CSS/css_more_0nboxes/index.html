@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS</title>
+    <style>
+        /* .box:first-child {
+            background-color: lightcoral;
+        } */
+        /* .box::first-line{
+            color: green;
+        } */
+         /* .box{
+            color: blue;
+            border: 2px solid black;
+            padding: 10px;
+         }
+         p,a,.box, [data-color="primary"]{
+            background-color: lightblue;
+         }
+         .box:nth-child(even){
+            background-color: lightgray;
+         } */
+         .boxes::before{
+            content: "Hello I am before the boxes";
+            }
+        .boxes::after{
+            content: "Hello I am after the boxes";
+            }
+        ::selection{
+            background-color: yellow;
+            color: red;
+        }
+        .box::first-letter{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Hey I Am a firstBox </div>
+        <div class="box">Hey I Am a Box</div>
+        <div class="box">Hey I Am a Box</div>
+        <p>This is a paragraph.</p>
+        <div data-color="primary">This div has a primary data attribute.</div>
+    </div>
+</body>
+</html>
